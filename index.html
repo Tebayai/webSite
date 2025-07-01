@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <title>Into the Deep</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HERO -->
+    <section class="hero">
+        <header>
+            <img src="assets/Logo.png" alt="Logo" width="100" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Zone</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="hero-content">
+            <h1>Into the <span>Deep</span></h1>
+            <div class="text-hero">
+                <p>Discover the depths of the ocean and the mysteries it holds</p>
+            </div>
+            <div class="home__scroll">
+                <span id="depth-0"></span>
+                <p>Scroll</p>
+                <a href="#depth-200"><i class='bx bx-mouse'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- NAVIGATION PROFONDEUR -->
+    <nav class="depth-nav">
+        <ul>
+            <li><a href="#depth-0">0 m</a></li>
+            <li><a href="#depth-200">200 m</a></li>
+            <li><a href="#depth-500">500 m</a></li>
+            <li><a href="#depth-1000">1 Km</a></li>
+            <li><a href="#depth-4000">4 Km</a></li>
+            <li><a href="#depth-11000">10 Km</a></li>
+        </ul>
+        <div class="submarine"></div>
+    </nav>
+
+    <!-- SECTIONS PAR PROFONDEUR -->
+    <div class="backgroundLinear">
+        <section class="parallax-container">
+            <span id="depth-200"></span>
+                <h2>Sunlight Zone (0 - 200m)</h2>
+            <div class="parallax-content">
+                <div class="left">
+                    <figure class="animal">
+                        <img src="assets/turtle.png" alt="turtle.png" class="turtle">
+                        <figcaption class="tooltip">Turtle</figcaption>
+                    </figure>
+                    <figure class="animal">
+                        <img src="assets/dolphin.png" alt="dolphin.png" class="dolphin">
+                        <figcaption class="tooltip">Dolphin</figcaption>
+                    </figure>
+                </div>
+                <div class="right">
+                        <h3>What is the Sunlight Zone?</h3>
+                        <br>
+                        <p>The Sunlight Zone is the uppermost layer of the ocean, extending from the surface to about 200 meters deep. It is well-lit by sunlight, allowing photosynthesis to occur, which supports a diverse range of marine life.</p>
+                        <br>
+                        <p>Home to most marine life, including dolphins, turtles and coral reefs.</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <p>Scroll down to explore deeper into the ocean's mysteries.</p>
+            </div>
+        </section>
+
+        <section class="parallax-container">
+            <span id="depth-500"></span>
+            <h2>Twilight Zone (200 - 1000m)</h2>
+            <div class="parallax-content">
+                <div class="left">
+                    <figure class="animal">
+                        <img src="assets/squid.png" alt="squid">
+                        <figcaption class="tooltip">Squid</figcaption>
+                    </figure>
+                    <figure class="animal">
+                        <img src="assets/hatchetfish.png" alt="hatchetfish">
+                        <figcaption class="tooltip">Hatchetfish</figcaption>
+                    </figure>
+                </div>
+                <div class="right">
+                    <h3>What is the Twilight Zone?</h3>
+                    <br>
+                    <p>The Twilight Zone receives very little sunlight and spans from 200 to 1000 meters deep. It’s a mysterious region where sunlight starts to fade and many creatures exhibit bioluminescence.</p>
+                    <br>
+                    <p>Inhabitants include squids, hatchetfish, and lanternfish, adapted to low-light conditions.</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <p>Keep scrolling to enter the deeper layers of the ocean.</p>
+            </div>
+        </section>
+
+        <section class="parallax-container depth-color-white">
+            <span id="depth-1000"></span>
+            <h2>Midnight Zone (1000 - 4000m)</h2>
+            <div class="parallax-content">
+                <div class="left">
+                    <figure class="animal">
+                        <img src="assets/anglerfish.png" alt="anglerfish">
+                        <figcaption class="tooltip">Anglerfish</figcaption>
+                    </figure>
+                    <figure class="animal">
+                        <img src="assets/viperfish.png" alt="viperfish">
+                        <figcaption class="tooltip">Viperfish</figcaption>
+                    </figure>
+                </div>
+                <div class="right">
+                    <h3>What is the Midnight Zone?</h3>
+                    <br>
+                    <p>This pitch-black layer extends from 1000 to 4000 meters. No sunlight reaches here. Temperatures are near freezing and pressures are immense.</p>
+                    <br>
+                    <p>Species here include anglerfish and viperfish, which use bioluminescence to lure prey or communicate in the dark.</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <p>The deep sea is getting colder and darker... scroll on!</p>
+            </div>
+        </section>
+
+        <section class="parallax-container depth-color-white">
+            <span id="depth-4000"></span>
+            <h2>Abyssal Zone (4000 - 6000m)</h2>
+            <div class="parallax-content">
+                <div class="left">
+                    <figure class="animal">
+                        <img src="assets/dumbo-octopus.png" alt="dumbo octopus">
+                        <figcaption class="tooltip">Dumbo Octopus</figcaption>
+                    </figure>
+                    <figure class="animal">
+                        <img src="assets/sea-cucumber.png" alt="sea cucumber">
+                        <figcaption class="tooltip">Sea Cucumber</figcaption>
+                    </figure>
+                </div>
+                <div class="right">
+                    <h3>What is the Abyssal Zone?</h3>
+                    <br>
+                    <p>This zone extends from 4000 to 6000 meters. It's one of the least explored environments on Earth, with total darkness, crushing pressure, and near-freezing temperatures.</p>
+                    <br>
+                    <p>Creatures like the Dumbo Octopus and sea cucumbers survive in this harsh environment.</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <p>Approaching the ocean’s deepest secrets…</p>
+            </div>
+        </section>
+
+        <section class="parallax-container depth-color-white">
+            <span id="depth-11000"></span>
+            <h2>Hadal Zone (6000 - 11000m)</h2>
+            <div class="parallax-content">
+                <div class="left">
+                    <figure class="animal">
+                        <img src="assets/snailfish.png" alt="snailfish">
+                        <figcaption class="tooltip">Snailfish</figcaption>
+                    </figure>
+                    <figure class="animal">
+                        <img src="assets/amphipod.png" alt="amphipod">
+                        <figcaption class="tooltip">Amphipod</figcaption>
+                    </figure>
+                </div>
+                <div class="right">
+                    <h3>What is the Hadal Zone?</h3>
+                    <br>
+                    <p>The Hadal Zone includes ocean trenches and the deepest parts of the sea, like the Mariana Trench, reaching depths of up to 11,000 meters.</p>
+                    <br>
+                    <p>Despite the extreme pressure, life exists here—like the ghostly snailfish and tiny amphipods.</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <p>You’ve reached the deepest known point on Earth.</p>
+            </div>
+        </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
